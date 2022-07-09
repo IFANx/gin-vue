@@ -1,10 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <div id="app">
   <router-view/>
+  </div>
 </template>
+
+<!--<script>-->
+<!--import Navbar from '@/views/layout/Navbar';-->
+<!--export default {-->
+<!--  // eslint-disable-next-line vue/no-unused-components-->
+<!--  components: { Navbar },-->
+<!--  data() {-->
+<!--  },-->
+<!--};-->
+<!--</script>-->
 
 <style lang="scss">
 #app {

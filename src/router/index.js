@@ -15,6 +15,18 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
+  {
+    path: '/login',
+    name: 'login',
+    // 异步回调，不会一次加载所有页面
+    component: () => import('../views/login/Login.vue'),
+  },
+  {
+    path: '/register',
+    name: 'register',
+    // 异步回调，不会一次加载所有页面
+    component: () => import('../views/register/Register.vue'),
+  },
 ];
 
 const router = createRouter({
